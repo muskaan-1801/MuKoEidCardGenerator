@@ -59,7 +59,8 @@ app.post("/", async (req, res) => {
   try {
       const savedUser = await newUser.save();
       console.log("User saved successfully:", savedUser);
-      res.redirect('http://192.168.0.104:5500/IT_WORKSHOP/public/register_successful.html');
+      res.redirect('https://muskaan-1801.github.io/MuKoEidCardGenerator/public/register_successful.html');
+
   } catch (err) {
       console.error("Error saving user:", err);
       res.status(500).send("Error saving user");
